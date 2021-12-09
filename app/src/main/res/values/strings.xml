@@ -1,0 +1,356 @@
+<resources>
+    <string name="app_name">Health Calculator</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_results">Results</string>
+    <string name="title_indexes">Indexes</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <string name="text_index_body_mass_short">Индекс массы тела (кг/м2)</string>
+    <string name="text_index_movement_activity_short">Уровень двигательный активности (число шагов в сутки)</string>
+    <string name="text_index_endurance_coefficient_short">Коэффициент выносливости (усл. ед.)</string>
+    <string name="text_index_robinson_short">Уровень регуляции сердечно-сосудистой системы</string>
+    <string name="text_index_vital_short">Жизненный индекс</string>
+    <string name="text_index_skibinski_short">Циркулярно-респираторный коэффициент Скибински</string>
+    <string name="text_index_kerdo_short">Вегетативный индекс Кердо</string>
+    <string name="text_index_functional_changes_short">Индекс функциональных изменений системы кровообращения</string>
+
+
+    <string name="text_index_body_mass">
+        Индекс массы тела (кг/м2), представляет собой значение по оценке степени соответствия 
+        массы тела человека и роста (длины тела), в результате определения индекса можно косвенно 
+        судить о том, что масса тела находится в пределах нормы или недостаточна или наоборот 
+        избыточная масса тела.
+    </string>
+    <string name="text_index_body_mass_result">
+        16-18,5 кг/м2 и менее, то наблюдается недостаток массы тела, \n\n
+        18,5-25 кг/м2 – норма, \n
+        25-30 кг/м2 – избыточная масса тела, \n
+        30-35 кг/м2 – первая степень ожирения, \n
+        35-40 кг/м2 – вторая степень ожирения, \n
+        свыше 40 кг/м2 – третья степень ожирения. \n
+        - индекс не учитывает пол, возраст, распределение в организме жирового и
+        мышечного компонента тела \n
+        - средние значения индекса, полученные в РЭУ им. Г.В. Плеханова
+        составили у девушек – 19-23 кг/м2, у юношей 20-23 кг/м2 \n
+        - у представителей молодого возраста (до 30 лет) индекс массы тела
+        ниже по сравнению с представителями среднего возраста \n
+        - для поддержания оптимальной массы тела необходимо ходить не менее
+        10 тысяч шагов в сутки \n
+        - по индексу массы тела можно лишь косвенно судить о норме, недостатке
+        или избыточной массе тела \n
+        - при индексе свыше 25 кг/м2 необходимо подключить онлайн-калькулятор питания
+        и контролировать полученные калории, увеличить прогулки на свежем воздухе, ограничить хлебобулочные изделия \n
+    </string>
+    <string-array name="text_index_body_mass_diagnose">
+        <item>наблюдается недостаток массы тела</item>
+        <item>норма</item>
+        <item>избыточная масса тела</item>
+        <item>первая степень ожирения</item>
+        <item>вторая степень ожирения</item>
+        <item>третья степень ожирения</item>
+    </string-array>
+    <string name="text_index_movement_activity">
+
+    </string>
+    <string name="text_index_movement_activity_result">
+        Результат __________ (шагов, среднее значение за год) \n
+        Методические рекомендации \n
+        &lt;5000 шагов в день – «сидячая работа»;  \n
+        7500-9999 шагов в день – «несколько активная работа»;  \n
+        10-12 тыс. шагов – «активный образ жизни»;  \n
+        свыше 12,5 тыс. шагов – «очень активный образ жизни»
+    </string>
+    <string-array name="text_index_movement_activity_diagnose">
+       <item>сидячая работа</item>
+       <item>несколько активная работа</item>
+       <item>активный образ жизни</item>
+       <item>очень активный образ жизни</item>
+    </string-array>
+    <string name="text_index_endurance_coefficient">
+        Коэффициент выносливости (усл. ед.) - характеризует функциональное состояние сердечно-сосудистой системы. \n
+        Формула: ЧСС * 10, разделенная на САД - ДАД, где ЧСС – частота сердечных сокращений (уд/мин), САД систолическое артериальное давление, ДАД – диастолическое артериальное давление, разница которых дает ПД – пульсовое давление (мм рт.ст.).
+    </string>
+    <string name="text_index_endurance_coefficient_result">
+        В норме коэффициент выносливости – 16 усл. ед., \n
+        - результат меньше 16 усл. ед. свидетельствует об усилении кардиореспираторной системы \n
+        - увеличение указывает на ослабление деятельности сердечно-сосудистой системы
+        или детренированности обследуемого \n
+        - при занятиях спортом коэффициент выносливости может быть ниже 16 усл.ед.,
+        из-за укрепления сердечно-сосудистой системы, коэффициент выносливости коррелирует
+        с уровнем физической работоспособности организма \n
+        - пульсовое давление ПД (САД-ДАД), необходимое для подсчета коэффициента
+        выносливости в среднем составляет 40 мм рт.ст. \n
+        - функционирование сердечно-сосудистой системы можно представить
+        как причинно-следственный процесс причиной (входом) которого является
+        систолическое АД (САД), а следствием (выходом) – диастолическое АД (ДАД),
+        зависимость выхода от входа опосредуется через пульсовое давление ПД= САД – ДАД \n
+        - ПД (пульсовое давление) является переходной функцией (оператором)
+        нейрогуморальной регуляции кровообращения. \n
+        - для улучшения коэффициента выносливости сердечно-сосудистой системы следует
+        заниматься ФКиС не менее трех раз в неделю, совершать 10-12,5 тысяч шагов в сутки
+    </string>
+    <string-array name="text_index_endurance_coefficient_diagnose">
+        <item>усиление кардиореспираторной системы</item>
+        <item>в норме</item>
+        <item>ослабление деятельности сердечно-сосудистой системы</item>
+    </string-array>
+    <string name="text_index_robinson">
+        Уровень регуляции сердечно-сосудистой системы («Двойное произведение», индекс Робинсона)
+        (усл. ед.). Индекс используется для косвенного определения степени обеспеченности
+        миокарда кислородом \n
+        Формула:
+        ЧСС \u00D7 САД, деленное на 100, где ЧСС – частота сердечных сокращений (уд/мин),
+        САД – систолическое артериальное давление (мм рт.ст.).
+    </string>
+    <string name="text_index_robinson_result">
+        до 74 усл. ед. – высокий уровень регуляции сердечно-сосудистой системы;  \n
+        75-80 – выше среднего;  \n
+        81-90 – средний;  \n
+        91-100 – ниже среднего;  \n
+        101 и выше – низкое значение регуляции.  \n
+        - показатели регуляции сердечно-сосудистой системы у спортсменов ниже, чем у
+        нетренированных лиц, так как сердце спортсмена в условиях покоя работает в
+        более экономичном режиме, при меньшем потреблении кислорода.
+        индекс используется для косвенного определения степени обеспеченности миокарда кислородом \n
+        - результаты индекса на студентах РЭУ им. Г.В. Плеханова:
+        девушки 90-101 усл. ед., юноши 92,3-96 усл. ед \n
+        - в процессе регулярных занятий ФКиС значения индекса постепенно снижаются, и могут
+        достигать среднего, выше среднего и высокого уровня регуляции сердечно-сосудистой системы \n
+    </string>
+    <string-array name="text_index_robinson_diagnose">
+        <item>высокий уровень регуляции сердечно-сосудистой системы</item>
+        <item>выше среднего</item>
+        <item>средний</item>
+        <item>ниже среднего</item>
+        <item>низкое значение регуляции</item>
+    </string-array>
+    <string name="text_index_vital">
+        Жизненный индекс (мл/кг), дающий косвенное представление о функциональных возможностях
+        системы внешнего дыхания, его рассчитывали по формуле:  ЖЕЛ, деленное на М,
+        где ЖЕЛ – жизненная емкость легких (мл), М – масса тела (кг).
+    </string>
+    <string name="text_index_vital_result">
+        - норма 50-61 мл/кг; если показатель меньше, то это может свидетельствовать
+        о недостаточности кислород обеспечения организма, недостаточной жизненной
+        емкости легких, либо избыточной массе тела \n
+        - для обследуемых, имеющих жизненный индекс ниже нормы рекомендуются физические
+        упражнения средней интенсивности, наряду с этим допускается чередование
+        высокоинтенсивных (молодой и средний возраст) и малоинтенсивных тренировочных нагрузок. \n
+        - на увеличение жизненной емкости легких влияют регулярные занятия физической
+        культурой и спортом, особенно занятия аэробной направленности (бег, велопрогулки,
+        плавание, аэробика, работа на кардиотренажерах, спортивные игры и другие). \n
+        -при большой жизненной емкости (ЖЕЛ) легкие лучше вентилируются и организм
+        получает больше кислорода. Норма ЖЕЛ у мужчин 3500-5000 мл, у женщин 2500-4000 мл.
+        В исследовании РЭУ им. Г.В. Плеханова ЖЕЖ у девушек 2100-2600 мл, у юношей 3800-4150 мл. \n
+        -у лиц, не занимающихся физической культурой и спортом чаще всего, жизненная
+        емкость легких ниже по сравнению с лицами регулярно занимающимися ФКиС \n
+        - жизненный индекс на 10-12% ниже у лиц имеющих избыточную массу тела
+    </string>
+    <string-array name="text_index_vital_diagnose">
+        <item>ниже нормы</item>
+        <item>в норме</item>
+        <item>ниже нормы</item>
+    </string-array>
+    <string name="text_index_skibinski">
+        Циркулярно-респираторный коэффициент Скибински (усл. ед.),
+        определяющий резервы и выносливость дыхательной и сердечно-сосудистой систем,
+        рассчитывали по формуле: ЖЕЛ \u00D7 ПШ, деленное на ЧСС \u00D7 100
+        ЖЕЛ – жизненная емкость легких (мл), ПШ – проба Штанге (с),
+        ЧСС – частота сердечных сокращений (уд/мин).
+    </string>
+    <string name="text_index_skibinski_result">
+        Оценка индекса:
+        &lt;5 усл. ед. – очень плохо (низкий уровень выносливость сердечно-сосудистой и дыхательной систем), \n
+        5-10 – неудовлетворительно, \n
+        10-30 – удовлетворительно, \n
+        30-60 – хорошо, \n
+         > 60 – очень хорошо (высокий уровень выносливости). \n
+        - проба Штанге (с), определяющая гипоксическую устойчивость организма (время задержки дыхания на вдохе). \n
+        - индекс Скибински характеризует состояние сердечно-сосудистой и дыхательной систем. \n
+    </string>
+    <string-array name="text_index_skibinski_diagnose">
+        <item>очень плохо (низкий уровень выносливость сердечно-сосудистой и дыхательной систем)</item>
+        <item>неудовлетворительно</item>
+        <item>удовлетворительно</item>
+        <item>хорошо</item>
+        <item>очень хорошо </item>
+    </string-array>
+    <string name="text_index_kerdo">
+        Вегетативный индекс Кердо (усл. ед), оценивающий состояние вегетативной нервной системы. \n
+        Формула: \n
+        100 \u00D7 (1 - ДАД, деленное на ЧСС) \n
+        ДАД – диастолическое артериальное давление (мм рт.ст.), \n
+        ЧСС – частота сердечных сокращений (уд/мин).
+    </string>
+    <string name="text_index_kerdo_result">
+        Индекс Кердо в норме равен 0 усл. ед., что демонстрирует оптимальный уровень
+        вегетативной регуляции сердечно-сосудистой системы. \n
+        - при преобладании симпатического тонуса отмечается увеличение \n
+        - при преобладании парасимпатического тонуса отмечается снижение индекса \n\n
+        ≥ +31 - выраженная симпатикотония
+        от +16 до +30 - симпатикотония
+        от -15 до +15 - уравновешенность симпатических и парасимпатических влияний
+        от -16 до -30 - парасимпатикотония
+        ≤ -30 - выраженная парасимпатикотония
+    </string>
+    <string-array name="text_index_kerdo_diagnose">
+        <item>выраженная симпатикотония</item>
+        <item>симпатикотония</item>
+        <item>уравновешенность симпатических и парасимпатических влияний</item>
+        <item>парасимпатикотония</item>
+        <item>выраженная парасимпатикотония</item>
+    </string-array>
+    <string name="text_index_functional_changes">
+        Индекс функциональных изменений \n
+        С помощью этого теста оценивают функциональные возможности системы кровообращения. \n
+        Формула: \n
+        ИФИ = 0,011×ЧСС + 0,014× САД + 0,008×ДАД + 0,014×В +
+        + 0,009×МТ - 0,009×Р - 0,27. \n
+        ЧСС_________ уд/мин \n
+        САД (сист. давлен.) _________ мм.рт.ст \n
+        ДАД (диаст. давлен.) __________ мм рт.ст. \n
+        В (возраст) _____________  лет \n
+        МТ (масса тела) _____________  (кг) \n
+        Р -рост _____________ (см)
+    </string>
+    <string name="text_index_functional_changes_result">
+        Оценку индекса функциональных изменений (ИФИ) осуществляют по следующей шкале: \n
+        ИФИ менее 2,6 — функциональные возможности системы кровообращения хорошие.
+        Механизмы адаптации устойчивы: действие неблагоприятных факторов студенческого
+        образа жизни успешно компенсируется мобилизацией внутренних резервов организма,
+        эмпирически подобранными профилактическими мероприятиями (увлечение спортом,
+        рациональное распределение времени на работу и отдых, адекватная организация питания). \n
+        ИФИ, равный 2,6—3,09 — удовлетворительные функциональные возможности системы
+        кровообращения с умеренным напряжением механизмов регуляции. Эта категория
+        практически здоровых людей, имеющих скрытые или нераспознанные заболевания,
+        нуждающихся в дополнительном обследовании. Скрытые или неясно выраженные
+        нарушения процессов адаптации могут быть восстановлены с помощью методов
+        нелекарственной коррекции (массаж, мышечная релаксация, дыхательная гимнастика,
+        аутотренинг), компенсирующих недостаточность или слабость внутреннего звена
+        саморегуляции функций. \n
+        ИФИ более 3,09 — сниженные, недостаточные возможности системы кровообращения,
+        наличие выраженных нарушений процессов адаптации. Необходима полноценная диагностика,
+        квалифицированное лечение и индивидуальный подбор профилактических мероприятий
+        в период ремиссии.
+    </string>
+    <string-array name="text_index_functional_changes_diagnose">
+        <item>функциональные возможности системы кровообращения хорошие</item>
+        <item>удовлетворительные функциональные возможности системы кровообращения</item>
+        <item>сниженные, недостаточные возможности системы кровообращения,</item>
+    </string-array>
+
+    <string name="text_results">Результат</string>
+    <string name="text_results_before_message">Описание: </string>
+    <string name="text_results_before_result">Ваш результат: </string>
+    <string name="text_results_before_date">Дата: </string>
+    <string name="text_results_value_date">Результат: %.02f %s, дата: %s</string>
+
+
+    <string name="text_continue">Продолжить</string>
+    <string-array name="array_sexes">
+        <item>Мужчина</item>
+        <item>Женщина</item>
+    </string-array>
+    <string name="placeholder_body_age">Ваш возраст</string>
+    <string name="placeholder_body_mass">Ваш вес (кг)</string>
+    <string name="placeholder_body_height">Ваш рост (м)</string>
+    <string name="placeholder_body_height_cm">Ваш рост (cм)</string>
+    <string name="placeholder_steps_pey_day">Число шагов в день</string>
+    <string name="placeholder_heart_beats_per_minute">Частота сердечных сокращений (уд/мин)</string>
+    <string name="placeholder_systolic_blood_pressure">Систолическое артериальное давление</string>
+    <string name="placeholder_diastolic_blood_pressure">Диастолическое артериальное давление</string>
+    <string name="placeholder_lungs_volume">Жизненная емкость легких (мл)</string>
+    <string name="placeholder_schtange_probe">проба Штанге (с)</string>
+
+</resources>

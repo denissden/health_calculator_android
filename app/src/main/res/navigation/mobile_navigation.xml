@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.healthcalculator.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.healthcalculator.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.healthcalculator.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_indexes"
+        android:name="com.example.healthcalculator.ui.indexes.IndexesFragment"
+        android:label="@string/title_indexes"
+        tools:layout="@layout/fragment_indexes" >
+        <action
+            android:id="@+id/action_navigation_indexes_to_indexMovementActivityActivity"
+            app:destination="@id/indexMovementActivityActivity" />
+        <action
+            android:id="@+id/action_navigation_indexes_to_indexEnduranceCoefficientActivity"
+            app:destination="@id/indexEnduranceCoefficientActivity" />
+        <action
+            android:id="@+id/action_navigation_indexes_to_indexRobinsonActivity"
+            app:destination="@id/indexRobinsonActivity" />
+        <action
+            android:id="@+id/action_navigation_indexes_to_indexVitalActivity"
+            app:destination="@id/indexVitalActivity" />
+        <action
+            android:id="@+id/action_navigation_indexes_to_indexKerdoActivity"
+            app:destination="@id/indexKerdoActivity" />
+        <action
+            android:id="@+id/action_navigation_indexes_to_indexSkibinskiActivity"
+            app:destination="@id/indexSkibinskiActivity" />
+        <action
+            android:id="@+id/action_navigation_indexes_to_indexKerdoActivity2"
+            app:destination="@id/indexKerdoActivity" />
+        <action
+            android:id="@+id/action_navigation_indexes_to_indexFunctionalChangesActivity"
+            app:destination="@id/indexFunctionalChangesActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_results"
+        android:name="com.example.healthcalculator.ui.results.ResultsFragment"
+        android:label="@string/title_results"
+        tools:layout="@layout/fragment_results" />
+
+    <fragment
+        android:id="@+id/navigation_statistics"
+        android:name="com.example.healthcalculator.ui.statistics.StatisticsFragment"
+        android:label="@string/title_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <activity
+        android:id="@+id/indexBodyMassActivity"
+        android:name="com.example.healthcalculator.ui.indexes.IndexBodyMassActivity"
+        android:label="activity_index_body_mass"
+        tools:layout="@layout/activity_index_body_mass" />
+    <activity
+        android:id="@+id/indexMovementActivityActivity"
+        android:name="com.example.healthcalculator.ui.indexes.IndexMovementActivityActivity"
+        android:label="activity_index_movement_activity"
+        tools:layout="@layout/activity_index_movement_activity" />
+    <activity
+        android:id="@+id/indexEnduranceCoefficientActivity"
+        android:name="com.example.healthcalculator.ui.indexes.IndexEnduranceCoefficientActivity"
+        android:label="activity_index_endurance_coefficient"
+        tools:layout="@layout/activity_index_endurance_coefficient" />
+    <activity
+        android:id="@+id/indexRobinsonActivity"
+        android:name="com.example.healthcalculator.ui.indexes.IndexRobinsonActivity"
+        android:label="activity_index_robinson"
+        tools:layout="@layout/activity_index_robinson" />
+    <activity
+        android:id="@+id/indexVitalActivity"
+        android:name="com.example.healthcalculator.ui.indexes.IndexVitalActivity"
+        android:label="activity_index_vital"
+        tools:layout="@layout/activity_index_vital" />
+    <activity
+        android:id="@+id/indexSkibinskiActivity"
+        android:name="com.example.healthcalculator.ui.indexes.IndexSkibinskiActivity"
+        android:label="activity_index_skibinski"
+        tools:layout="@layout/activity_index_skibinski" />
+    <activity
+        android:id="@+id/indexKerdoActivity"
+        android:name="com.example.healthcalculator.ui.indexes.IndexKerdoActivity"
+        android:label="activity_index_kerdo"
+        tools:layout="@layout/activity_index_kerdo" />
+    <activity
+        android:id="@+id/indexFunctionalChangesActivity"
+        android:name="com.example.healthcalculator.ui.indexes.IndexFunctionalChangesActivity"
+        android:label="activity_index_functional_changes"
+        tools:layout="@layout/activity_index_functional_changes" />
+    <activity
+        android:id="@+id/indexResultsActivity"
+        android:name="com.example.healthcalculator.ui.indexes.IndexResultsActivity"
+        android:label="activity_index_results"
+        tools:layout="@layout/activity_index_results" />
+</navigation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.indexes.IndexRobinsonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/text_index_robinson" />
+
+        <EditText
+            android:id="@+id/edit_text_heart_beats_per_minute"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:hint="@string/placeholder_heart_beats_per_minute" />
+
+        <EditText
+            android:id="@+id/edit_text_systolic_blood_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:hint="@string/placeholder_systolic_blood_pressure" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_continue"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:onClick="continueClick"
+            />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
