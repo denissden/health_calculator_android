@@ -8,45 +8,46 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HealthCalculator"
-        >
+        android:theme="@style/Theme.HealthCalculator">
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.indexes.IndexBodyMassActivity"
-            android:label="@string/text_index_body_mass_short"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/text_index_body_mass_short" />
         <activity
             android:name=".ui.indexes.IndexMovementActivityActivity"
-            android:label="@string/text_index_movement_activity_short"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/text_index_movement_activity_short" />
         <activity
             android:name=".ui.indexes.IndexEnduranceCoefficientActivity"
-            android:label="@string/text_index_endurance_coefficient_short"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/text_index_endurance_coefficient_short" />
         <activity
             android:name=".ui.indexes.IndexRobinsonActivity"
-            android:label="@string/text_index_robinson_short"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/text_index_robinson_short" />
         <activity
             android:name=".ui.indexes.IndexVitalActivity"
-            android:label="@string/text_index_vital_short"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/text_index_vital_short" />
         <activity
             android:name=".ui.indexes.IndexSkibinskiActivity"
-            android:label="@string/text_index_skibinski_short"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/text_index_skibinski_short" />
         <activity
             android:name=".ui.indexes.IndexKerdoActivity"
-            android:label="@string/text_index_kerdo_short"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/text_index_kerdo_short" />
         <activity
             android:name=".ui.indexes.IndexFunctionalChangesActivity"
-            android:label="@string/text_index_functional_changes_short"
-            android:exported="false" />
-
+            android:exported="false"
+            android:label="@string/text_index_functional_changes_short" />
         <activity
             android:name=".ui.indexes.IndexResultsActivity"
-            android:label="@string/text_results"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/text_results" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

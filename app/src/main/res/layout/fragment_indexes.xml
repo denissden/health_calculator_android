@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/fragment_bottom_margin"
     tools:context=".ui.indexes.IndexesFragment">
 
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:id="@+id/layout_indexes_main"
         android:layout_width="match_parent"
@@ -57,12 +60,69 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button_body_mass"
+            android:id="@+id/button_index_1"
             android:text="@string/text_index_body_mass_short"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/input_horizontal_margin"
             android:layout_marginVertical="@dimen/input_vertical_margin"
             />
+
+        <Button
+            android:id="@+id/button_index_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:text="@string/text_index_movement_activity_short" />
+
+        <Button
+            android:id="@+id/button_index_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:text="@string/text_index_endurance_coefficient_short" />
+
+        <Button
+            android:id="@+id/button_index_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:text="@string/text_index_robinson_short" />
+
+        <Button
+            android:id="@+id/button_index_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:text="@string/text_index_vital_short" />
+
+        <Button
+            android:id="@+id/button_index_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:text="@string/text_index_skibinski_short" />
+
+        <Button
+            android:id="@+id/button_index_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:text="@string/text_index_kerdo_short" />
+
+        <Button
+            android:id="@+id/button_index_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/input_horizontal_margin"
+            android:layout_marginVertical="@dimen/input_vertical_margin"
+            android:text="@string/text_index_functional_changes_short" />
     </LinearLayout>
+    </ScrollView>
 </androidx.core.widget.NestedScrollView>

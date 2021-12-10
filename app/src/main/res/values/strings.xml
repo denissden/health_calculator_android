@@ -152,10 +152,10 @@
         свыше 12,5 тыс. шагов – «очень активный образ жизни»
     </string>
     <string-array name="text_index_movement_activity_diagnose">
-       <item>сидячая работа</item>
-       <item>несколько активная работа</item>
-       <item>активный образ жизни</item>
-       <item>очень активный образ жизни</item>
+        <item>сидячая работа</item>
+        <item>несколько активная работа</item>
+        <item>активный образ жизни</item>
+        <item>очень активный образ жизни</item>
     </string-array>
     <string name="text_index_endurance_coefficient">
         Коэффициент выносливости (усл. ед.) - характеризует функциональное состояние сердечно-сосудистой системы. \n
@@ -329,6 +329,11 @@
         <item>удовлетворительные функциональные возможности системы кровообращения</item>
         <item>сниженные, недостаточные возможности системы кровообращения,</item>
     </string-array>
+
+    <string name="text_app_name">Онлайн-калькулятор функционального состояния и массы тела</string>
+    <string name="text_8_indexes">8 показателей</string>
+    <string name="text_plus">+</string>
+    <string name="text_bmi">BMI</string>
 
     <string name="text_results">Результат</string>
     <string name="text_results_before_message">Описание: </string>
