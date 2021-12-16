@@ -28,15 +28,20 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Spinner
-                    android:id="@+id/spinner_sex"
+                <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:spinnerMode="dropdown"
-                    android:entries="@array/array_sexes"
-                    android:layout_marginHorizontal="@dimen/input_horizontal_margin"
-                    android:layout_marginVertical="@dimen/input_vertical_margin"
-                    />
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="мужчина" />
+                    <RadioButton android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="женщина" />
+
+                </RadioGroup>
 
                 <EditText
                     android:id="@+id/edit_text_age"

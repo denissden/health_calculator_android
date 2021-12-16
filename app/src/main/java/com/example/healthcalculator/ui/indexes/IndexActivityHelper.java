@@ -3,6 +3,7 @@ package com.example.healthcalculator.ui.indexes;
 import android.content.Intent;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,7 +31,11 @@ public class IndexActivityHelper extends AppCompatActivity{
         Intent intent = new Intent(this, IndexResultsActivity.class);
         Float index = calculateIndex();
         Result = index;
-        if (index.isNaN() || index.isInfinite()) return;
+        if (index.isNaN() || index.isInfinite()) {
+            Toast.makeText(getApplicationContext(), "Некорректный ввод",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
         validateResult();
         intent.putExtra(Constants.ResultsValue, index);
         intent.putExtra(Constants.IndexTypeMessage, IndexType);

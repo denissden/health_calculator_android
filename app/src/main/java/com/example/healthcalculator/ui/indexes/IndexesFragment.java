@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TableLayout;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -69,19 +70,6 @@ public class IndexesFragment extends Fragment implements View.OnClickListener {
             b.setOnClickListener(this);
         }
 
-        spinner_sex = binding.spinnerSex;
-        spinner_sex.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parentView) {
-
-            }
-
-        });
 
         return root;
     }
@@ -96,8 +84,25 @@ public class IndexesFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         EditText age_text = getActivity().findViewById(R.id.edit_text_age);
         Float age = Utilities.FloatSafe(age_text.getText().toString());
-        if (age.isNaN() || age.isInfinite()) return;
+        if (age.isNaN() || age.isInfinite()) {
+            Toast.makeText(getContext(), "Некорректный ввод",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
         Values.Age = age;
+
+        if (!binding.radioMale.isChecked() && !binding.radioFemale.isChecked()) {
+            Toast.makeText(getContext(), "Пол должен быть выбран",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+
+        if (age > 150 || age < 1) {
+            Toast.makeText(getContext(), "Возраст должен быть больше 1 и меньше 150",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         int button_id = v.getId();
         int activityIndex = Arrays.asList(button_ids).indexOf(button_id);
