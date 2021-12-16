@@ -343,10 +343,9 @@
 
 
     <string name="text_continue">Продолжить</string>
-    <string-array name="array_sexes">
-        <item>Мужчина</item>
-        <item>Женщина</item>
-    </string-array>
+    <string name="sex_male">Мужчина</string>
+    <string name="sex_female">Женщина</string>
+
     <string name="placeholder_body_age">Ваш возраст</string>
     <string name="placeholder_body_mass">Ваш вес (кг)</string>
     <string name="placeholder_body_height">Ваш рост (м)</string>
